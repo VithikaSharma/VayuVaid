@@ -16,17 +16,14 @@ document.querySelector('#menu-btn').onclick = () => {
     console.log("menu-clicked");
 }
 
-document.querySelector('#search-btn').onclick = () => {
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    cartItem.classList.remove('active'); // Remove 'active' class from cart items when search button is clicked
-}
 
-// document.querySelector('#cart-btn').onclick = () => {
-//     cartItem.classList.toggle('active');
-//     navbar.classList.remove('active');
-//     searchForm.classList.remove('active');
-// }
+
+document.querySelector('#search-btn').onclick = () => {
+    window.location.href = "city.html"; // Replace 'your-new-webpage-url.html' with the URL of your new webpage
+  }
+  
+
+
 
 window.onscroll = () => {
     navbar.classList.remove('active');
